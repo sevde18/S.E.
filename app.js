@@ -1,26 +1,19 @@
-var weight = document.getElementById('fweight').value;
-var height = document.getElementById('fheight').value;
-var calcBtn = document.getElementById('calc');
-var BMI = document.getElementById('result');
-
-calcBtn.addEventListener('click',  function() { 
-    var bmi = calcBMI(80, 1.70);
-    BMI.innerText = bmi;
+    
+      document.querySelector('.btn-new').addEventListener('click', function() { 
+        var weight = document.getElementById('weight').value;   
+        var height = document.getElementById('height').value; 
+        var bmi = weight / (height*height);
+       
+        bmiInterpratation(bmi);
 });
-function BMI(weight, height)
-    {
-    var bmı; 
-    bmı= weight/(height*height);
-    return bmı;
-    }
 
-function calcBMI(weight, height)
-    {
-        var bmı; 
-        bmı = weight/(height*height);
-        if(bmı<18.5)
-        {return "underweight";}
-        else if (bmı>=18.5 && bmı<24.9) return "normal weight";
-        else if (bmı>=25&& bmı< 29.0) return "overweight";
-        else return "obesity";        
-    }
+function bmiInterpratation(bmi) {
+    var result;
+    if(bmi<18.5)
+    {result = " - underweight";}
+    else if (bmi>=18.5 && bmi<24.9) result = " - normal weight.";
+    else if (bmi>=25&& bmi< 29.0) result = " - overweight.";
+    else result = "- obesity";
+    document.getElementById('result').innerHTML = 
+    'Your BMI is ' + Math.round(bmi * 100) / 100 + ' ' + result;
+}
