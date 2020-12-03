@@ -3,15 +3,12 @@ document.querySelector('.btn').addEventListener('click', function()
   var weight = document.getElementById('weight').value;   
   var height = document.getElementById('height').value; 
   var bmi = weight / (height*height);
-
   if ( !isNaN(weight) && !isNaN(height) ) {
     if(height > 2.50) { alert ("The hight is probably to high !");
     } else {
     bmiInterpratation(bmi);
   }
 } else { alert ("weight and height must be numbers !!!"); }
-
-
  
   bmiInterpratation(bmi);
 });
