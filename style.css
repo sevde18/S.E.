@@ -1,3 +1,76 @@
+body {
+    background-image: url("4.jpeg"); /* The image used */
+    background-repeat: no-repeat;   /* Do not repeat the image */
+    background-size: cover;   /* Resize the background image to cover the entire container */
+   
+  }
+
 .title{
-    color:purple;
+    color:rgb(38, 0, 128);
+    text-align: center;
+    font-size: 48px;
+}
+#header
+{
+background-color:rgb(243, 173, 173) ;
+width: 100%;
+height: 20%;
+padding-bottom: 10px;
+}
+#inputs{
+    text-align: center;
+    background-color:rgb(243, 243, 243) ;
+    width: 100%;
+    height: 20%;
+    padding-bottom: 10px;
+    
+}
+.input{
+    
+    width: 200px;
+    font-size: 25px;
+    padding-top:10 px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.btn{  width: 180px;
+    height: 48;
+    text-align: center;
+    color:rgb(38, 0, 128);
+    font-size: large;
+    font-style: italic;
+    border-radius: 50%;
+    padding 5px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid white;
+   
+}
+#btndiv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+}
+#result{
+    background-color:rgb(243, 243, 243) ;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    font-size: 50px;
+}
+.obesity {
+    color: red;
+}
+
+.over-weight {
+    color: orange;
+}
+
+.normal-weight {
+color: black;
+}
+.under-weight {
+    color: cornflowerblue;
 }
