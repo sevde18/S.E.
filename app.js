@@ -3,15 +3,15 @@ document.querySelector('.btn').addEventListener('click', function()
   var weight = document.getElementById('weight').value;   
   var height = document.getElementById('height').value; 
   var bmi = weight / (height*height);
-<<<<<<< HEAD
+
   if ( !isNaN(weight) && !isNaN(height) ) {
     if(height > 2.50) { alert ("The hight is probably to high !");
     } else {
     bmiInterpratation(bmi);
   }
 } else { alert ("weight and height must be numbers !!!"); }
-=======
->>>>>>> 8deb7c99f5b8dd9cfd5e0b9982c49bdf294b135e
+
+
  
   bmiInterpratation(bmi);
 });
@@ -36,8 +36,4 @@ document.getElementById('result').classList.add("obesity");
 } 
 document.getElementById('result').innerHTML = 
 'Your BMI is ' + Math.round(bmi * 100) / 100 + ' ' + result;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8deb7c99f5b8dd9cfd5e0b9982c49bdf294b135e
